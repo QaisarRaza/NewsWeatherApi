@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height:auto;
+    margin: auto;
+    /* padding-bottom: 30px;
+    padding-top: 30px; */
+}
+.navbar{
+   width: 100%;
+   height: 90px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgb(0, 153, 255);
+}
+.logo{
+   color: red;
+   font-size: 30px;
+   letter-spacing: 2px;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: underline;
+}
+.nav-items{
+   display: flex;
+}
+li{
+   list-style: none;
+}
+li a{
+   text-decoration: none;
+   padding: 15px;
+   margin: 2px;
+   letter-spacing: 2px;
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+}
+li a:hover{
+    color: gray;
+   text-decoration: underline;
+}
+.openmanue{
+   display: none;
+   position:absolute;
+   right: 15px;
+   font-size: 30px;
+   color: black;
+   display: none;
+   cursor: pointer;
+}
+.closmanue{
+   display: none;
+   margin-top: 30px;
+}
+@media screen and (max-width:830px)
+{
+   .openmanue{
+       display: block;
+   }
+   .closmanue{
+       display: block; 
+       position: absolute;
+       right: 15px;
+       top: 0px;
+       font-size: 30px;
+       color: white;
+       cursor: pointer;
+   }
+   .nav-items{
+       width: 100%;
+       height: 100vh;
+       background-color: rgb(15, 15, 15);
+       position:fixed;
+       right: -100%; 
+       top: 0px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       transition: 1s;
+       z-index: 1;
+   }
+   li {
+       padding: 20px;
+   }
+   li a{
+       color: white;
+       font-size: 30px;
+   }
+   .albtn{
+       flex-direction: column;
+   }
+   .home{
+       font-size: 20px;
+   }
+}
+@media screen and (max-width:450px) {
+    .card1{
+        width: 340px;
+        height: 400px;
+    }
+    .card1 img{
+        width:340px;
+    }
+}
+
+
+
+
+
+
+
+
+.home{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.albtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.albtn input{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border:7px solid rgb(0, 153, 255);
+    font-size: 20px;
+    border-radius: 5px;
+}
+.search{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.butn{
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration:none;
+    margin: 10px;
+    font-weight: bold;
+}
+.butn:hover{
+    color: rgb(74, 74, 77);
+    text-decoration: underline;
+}
+.home button:hover{
+    background-color: rgb(192, 207, 235);
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.card1{
+    margin-top: 30px;
+    width: 400px;
+    height: 470px;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 5px solid gray;
+}
+.card1 img{
+    width: 400px;
+    height: 250px;
+    border-radius: 5px 5px 0px 0px;
+}
+.card1 p{
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+.card1 button{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+} 
+.card1 button:hover{
+    color: gray;
+    border: 2px solid gray;
+}
+
+
+
+/* this is about page */
+.about{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    padding: 30px 30px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.img img{
+ width: 550px;
+ height: 500px;
+ margin-right: 30px;
+ border: 2px solid black;
+}
+.img p{
+    width: 400px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+}
+.img button{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 18px;
+}
+ .img,.con{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:688px){
+    .img img{
+        width: 400px;
+        height: 400px;
+    }
+    .img p{
+        width: 300ppx;
+    }
+}
+@media screen and (max-width:488px){
+    .img img{
+        width: 300px;
+        height: 300px;
+    }
+    .img p{
+        width: 200ppx;
+        height: 200px;
+    }
+    .about{
+        font-size: 15px;
+    }
+} 
+
+
+
+/* this is services page */
+.services{
+    font-size: 25px;
+    text-align: center;
+    margin: 70px 0px;
+}
+
+/* this is Error Page */
+.page{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+/* this is weather page */
+.weather{
+    width:100%;
+    height: 85vh;
+    background-color: rgb(228, 230, 230);
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.textinput input{
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+}
+.weather h1{
+    padding: 10px 0px;
+    font-size: 40px;
+}
+.weathercard p{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+.weathercard h1{
+    font-size: 70px;
+    margin-top: 20px;
+    text-align: center;
+}
+.weathercard h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+}
